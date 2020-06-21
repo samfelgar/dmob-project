@@ -52,7 +52,6 @@ const ContactForm = ({name, phone, changeName, changePhone, submitForm }) => {
     )
 }
 
-
 const Contacts = () => {
     
     const [contacts, setContacts] = useState([])
