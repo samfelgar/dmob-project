@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { View, Text, TextInput, FlatList, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, FlatList, TouchableOpacity, Alert } from 'react-native'
 import * as SQLite from 'expo-sqlite'
 import { Styles } from '../../styles/styles'
 
@@ -61,6 +61,11 @@ const Contacts = () => {
     const database = SQLite.openDatabase('contacts.db')
 
     const handleSubmit = () => {
+        if (name === '' || phone === '') {
+            Alert.alert('Oops', 'Todos os campos devem ser preenchidos')
+            return
+        }
+        
         let newContact = {
             name,
             phone

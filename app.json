@@ -26,7 +26,14 @@
     },
     "android": {
       "package": "com.samfelgar.dmob",
-      "versionCode": 1
-    }
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAAslIn-Jo8eab5CbSyOanTx0VeGzAlAPw"
+        }
+      }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/samfelgar/dmob-project"
   }
 }
